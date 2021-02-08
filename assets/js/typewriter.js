@@ -47,7 +47,6 @@ function type_writer() {
     var words = ["Tanish Yadav", "A Programmer", "A Student", "Awesome"];
     var element = document.getElementById("words");
     var cursor = document.getElementById("cursor");
-    var curs_char = '|';
     var current_index_w = 0;
     var word_to_add = words[0];
     var current_index_c = 0;
@@ -55,6 +54,8 @@ function type_writer() {
     var index_char_removing = -1;
     var index_word_removing = 0;
     var word_removing = words[0];
+    element.innerHTML = "";
+    cursor.style.visibility = "visible";
     setTimeout(add_char, 1000);
 }
 window.onload = type_writer;
