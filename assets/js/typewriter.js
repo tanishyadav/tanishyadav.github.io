@@ -44,7 +44,7 @@ function type_writer() {
             setTimeout(rm_char, 100)
         }
     }
-    var words = ["Tanish Yadav", "A Programmer", "A Student", "Awesome"];
+    var words = ["Tanish\xa0Yadav", "A\xa0Programmer", "A\xa0Student", "Awesome"];
     var element = document.getElementById("words");
     var cursor = document.getElementById("cursor");
     var current_index_w = 0;
